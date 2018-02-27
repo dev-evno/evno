@@ -51,7 +51,7 @@ namespace MVC01.Crypto
 
         public string mydemo()
         {
-            return "hello";
+            return "hey whatsup";
         }
     }
 }
