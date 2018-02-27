@@ -35,21 +35,12 @@ namespace MVC01.AppCode
 
                 if (storedHash != calcHash)
                 {
-                    //'Data was corrupted
-
-                    // lblAlert2.Text = "Hash value does not match !!";
-
-                    //  'This error is immediately caught below
-
+                    
                 }
             }
             catch (Exception ex)
             {
-                //divAlert.Visible = false;
-                //lblAlert2.Text = "Invalid TamperProofString !!";
-                //divAlert2.Visible = true;
-                //divAlert2.Focus();
-
+              
             }
 
             return dataValue;
