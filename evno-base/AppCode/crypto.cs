@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace MVC01.AppCode
+namespace MVC01.Crypto
 {
-    public class Common
+    public class crypto
     {
 
         public static string encrypt(string value, string key)
@@ -14,7 +14,6 @@ namespace MVC01.AppCode
             System.Security.Cryptography.MD5CryptoServiceProvider md5 = new System.Security.Cryptography.MD5CryptoServiceProvider();
             mac3des.Key = md5.ComputeHash(System.Text.Encoding.UTF8.GetBytes(key));
             return Convert.ToBase64String(System.Text.Encoding.UTF8.GetBytes(value)) + "-" + Convert.ToBase64String(mac3des.ComputeHash(System.Text.Encoding.UTF8.GetBytes(value)));
-            //string encryptedQueryString = TamperProofStringEncode(hfOrderId.Value, "F44fggjj");
         }
 
         private string decrypt(string value, string key)
@@ -35,21 +34,10 @@ namespace MVC01.AppCode
 
                 if (storedHash != calcHash)
                 {
-                    //'Data was corrupted
-
-                    // lblAlert2.Text = "Hash value does not match !!";
-
-                    //  'This error is immediately caught below
-
                 }
             }
             catch (Exception ex)
             {
-                //divAlert.Visible = false;
-                //lblAlert2.Text = "Invalid TamperProofString !!";
-                //divAlert2.Visible = true;
-                //divAlert2.Focus();
-
             }
 
             return dataValue;
