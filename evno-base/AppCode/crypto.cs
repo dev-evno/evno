@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 
 namespace MVC01.Crypto
 {
@@ -42,6 +39,11 @@ namespace MVC01.Crypto
 
             return dataValue;
 
+        }
+
+        public string mydemo()
+        {
+            return "hello";
         }
     }
 }
