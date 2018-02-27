@@ -40,3 +40,6 @@ D:\WorkBench\MVC\evno-base\bin\Microsoft.AspNet.Identity.Core.xml
 D:\WorkBench\MVC\evno-base\obj\Debug\evno-base.csprojResolveAssemblyReference.cache
 D:\WorkBench\MVC\evno-base\obj\Debug\MVC01.dll
 D:\WorkBench\MVC\evno-base\obj\Debug\MVC01.pdb
+E:\Divya\EvnoProject\evno\evno-base\obj\Debug\evno-base.csprojResolveAssemblyReference.cache
+E:\Divya\EvnoProject\evno\evno-base\obj\Debug\MVC01.dll
+E:\Divya\EvnoProject\evno\evno-base\obj\Debug\MVC01.pdb

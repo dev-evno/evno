@@ -120,7 +120,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AppCode\Common.cs" />
+    <Compile Include="AppCode\crypto.cs" />
     <Compile Include="Controllers\dashController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
