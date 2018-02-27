@@ -28,24 +28,12 @@ namespace MVC01.Crypto
                 dataValue = System.Text.Encoding.UTF8.GetString(Convert.FromBase64String(value.Split('-')[0]));
                 storedHash = System.Text.Encoding.UTF8.GetString(Convert.FromBase64String(value.Split('-')[1]));
                 calcHash = System.Text.Encoding.UTF8.GetString(mac3des.ComputeHash(System.Text.Encoding.UTF8.GetBytes(dataValue)));
-
-                if (storedHash != calcHash)
-                {
-<<<<<<< HEAD:evno-base/AppCode/Common.cs
-                    
-=======
->>>>>>> 3c3aeb15f248076a875d72881270dacd032327d9:evno-base/AppCode/crypto.cs
-                }
+                return dataValue;
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
-<<<<<<< HEAD:evno-base/AppCode/Common.cs
-              
-=======
->>>>>>> 3c3aeb15f248076a875d72881270dacd032327d9:evno-base/AppCode/crypto.cs
+                ex.ToString();
             }
-
-            return dataValue;
 
         }
 
