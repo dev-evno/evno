@@ -30,16 +30,16 @@ namespace MVC01.Crypto
                 calcHash = System.Text.Encoding.UTF8.GetString(mac3des.ComputeHash(System.Text.Encoding.UTF8.GetBytes(dataValue)));
                 return dataValue;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 ex.ToString();
             }
-
+            return dataValue;
         }
 
         public string mydemo()
         {
-            return "hey whatsup";
+            return "hey Both of you";
         }
     }
 }
